@@ -1,5 +1,4 @@
 package lab1;
-//11am
 import java.util.Scanner;
 
 /**
