@@ -71,8 +71,9 @@ public class WheelOfFortune {
     public static int countLetter(char[] secretArray, char letter) {
         int count = 0;
         for (int i = 0; i < secretArray.length; i++) {
-            if (secretArray[i] == letter)
+            if (secretArray[i] == letter) {
                 count++;
+            }
         }
         return count;
     }
