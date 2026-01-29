@@ -61,7 +61,7 @@ and how it is implemented in Java.
 
 - What is the data type of the secretArray variable first declared on line 17?
 
-  __Answer__:
+  __Answer__: character array, or char[], or array of char
 
 - What is the data type of the guessedLetters variable first declared on line 12?
 
@@ -115,7 +115,7 @@ Now look at the countLetter function.
 - Now look at the makePuzzleArray function.  What data type does this function
   return?
 
-  __Answer__:
+  __Answer__: array of characters
 
 - Explain what the line `char[] puzzleArray = new char[secretArray.length];` does.
   In particular, how big is the new array compared to the old array?

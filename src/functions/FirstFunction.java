@@ -7,5 +7,6 @@ public class FirstFunction {
 
     public static void main(String[] args) {
         System.out.println(distance(1, 2, 3, 4));
+        System.out.println(distance(0, 0, 1, 1));
     }
 }
