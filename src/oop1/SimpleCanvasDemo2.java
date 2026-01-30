@@ -20,7 +20,7 @@ public class SimpleCanvasDemo2 {
         // Invoke some instance methods on the second canvas object.
         canvas2.setPenColor(Color.RED);
         canvas2.drawFilledCircle(150, 150, 100);
-        canvas2.drawImage(50, 50, "lynx.png");
+        canvas2.drawImage(50, 50, "lynx.png", 300, 100);
         canvas2.show();
 
         // Note that each object has its own identity
