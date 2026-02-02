@@ -25,5 +25,8 @@ public class SimpleCanvasDemo2 {
 
         // Note that each object has its own identity
         // and the objects refer to different canvases.
+        SimpleCanvas canvas3 = canvas2;
+        canvas3.drawCircle(20, 20, 50);
+        canvas3.update();
     }
 }
