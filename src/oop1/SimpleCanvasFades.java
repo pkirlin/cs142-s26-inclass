@@ -5,6 +5,16 @@ import java.awt.*;
 public class SimpleCanvasFades {
     public static void main(String[] args) {
 
+        SimpleCanvas canvas = new SimpleCanvas(256, 256);
+
+        for (int i = 0; i < 256; i++) {
+            Color mycolor = new Color(0, 0, i);
+            canvas.setPenColor(mycolor);
+            canvas.drawLine(0, i, 256, i);
+        }
+
+        canvas.show();
+
         // Create a 256 by 256 canvas.
         // Use a for loop to draw 256 horizontal lines on the canvas, starting at solid black
         // at the top, and transitioning to solid blue at the bottom.  Use a different color
