@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Gotchas {
     public static void main(String[] args)
     {
-        demoGotcha1();
-        //demoGotcha3();
+        //demoGotcha1();
+        demoGotcha3();
     }
 
     public static void demoGotcha1()
