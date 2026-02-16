@@ -16,5 +16,14 @@ public class DogDemo {
         System.out.println("Toto's age is " + toto.getAge());
         System.out.println(toto);
         System.out.println(fido);
+
+        //fido.setEnergy(5);
+        fido.goToSleep(5);
+        fido.playFetch();
+        System.out.println(fido);
+
+        fido.chase(toto);
+        toto.chase(fido);
+        toto.chase(toto);
     }
 }

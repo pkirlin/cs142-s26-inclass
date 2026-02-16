@@ -16,6 +16,34 @@ public class Dog {
         age = newAge;
     }
 
+    public void playFetch() {
+        if (energy > 0) {
+            System.out.println(name + " is playing fetch.");
+            energy--;
+        }
+        else {
+            System.out.println(name + " is too tired to play fetch.");
+        }
+    }
+
+    public void goToSleep(int howlong) {
+        energy += howlong;
+    }
+
+    public void chase(Dog friend) {
+        System.out.println(this.name + " chases " + friend.name);
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(int newEnergy) {
+        if (newEnergy >= 0) {
+            energy = newEnergy;
+        }
+    }
+
     // methods
     public void birthday() {
         age++;
@@ -41,7 +69,8 @@ public class Dog {
 
     public String toString() {
         // return a String!
-        return "name of dog is " + name + " and age of dog is " + age;
+        return "name of dog is " + name + " and age of dog is " + age + " and energy=" + energy;
+
     }
 
 }
