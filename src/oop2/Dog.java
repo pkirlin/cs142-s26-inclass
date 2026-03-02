@@ -5,15 +5,20 @@ public class Dog {
     private String name;
     private int age;
     private int energy;
+    public static int dogSittingRate = 20;
 
-    public Dog() {
+    public Dog() { // default constructor
         age = 1;
         name = "My dog";
     }
 
-    public Dog(String newName, int newAge) {
+    public Dog(String newName, int newAge) { // constructor
         name = newName;
         age = newAge;
+    }
+
+    public int getCostOfDogSitting(int days) {
+        return dogSittingRate * days;
     }
 
     public void playFetch() {

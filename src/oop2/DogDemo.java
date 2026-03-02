@@ -6,6 +6,7 @@ public class DogDemo {
         Dog fido = new Dog("Fido", 3);
         //fido.setName("Fido");
         //fido.setAge(11);
+
         System.out.println("Fido's age is " + fido.getAge());
         fido.birthday();
         System.out.println("Fido's age is " + fido.getAge());
@@ -25,5 +26,22 @@ public class DogDemo {
         fido.chase(toto);
         toto.chase(fido);
         toto.chase(toto);
+
+        int[] intArray = new int[10];
+        Dog[] dogArray = new Dog[5];
+        dogArray[0] = new Dog("Fluffy", 6);
+        dogArray[1] = toto;
+        dogArray[1].setAge(4);
+        System.out.println(dogArray[1]);
+        System.out.println(toto);
+        System.out.println(dogArray[2]);
+        dogArray[0].chase(dogArray[1]);
+        System.out.println(dogArray[0].getName().length());
+        String s = dogArray[0].getName();
+        System.out.println(s.length());
+        Dog fluffy = dogArray[0];
+        //fluffy.chase(dogArray[2]);
+        System.out.println(fluffy.getCostOfDogSitting(7));
+        Dog.dogSittingRate = 25;
     }
 }
