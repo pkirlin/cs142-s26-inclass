@@ -9,6 +9,7 @@ public class Exercises {
     public static void main(String[] args) {
         // Test noDuplicates:
         ArrayList<Integer> intList = new ArrayList<Integer>();
+        ArrayList<String> stringList = new ArrayList<String>();
         intList.add(10);
         intList.add(20);
         intList.add(10);
@@ -18,6 +19,13 @@ public class Exercises {
         intList.add(20);
         intList.add(5);
         System.out.println("ArrayList with duplicates: " + intList);
+
+        for (int i = 0; i < intList.size(); i++) {
+            System.out.println(intList.get(i));
+        }
+
+
+
         ArrayList<Integer> noDupes = noDuplicates(intList);
         System.out.println("ArrayList with duplicates: " + noDupes);
 
