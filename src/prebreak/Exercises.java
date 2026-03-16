@@ -24,8 +24,6 @@ public class Exercises {
             System.out.println(intList.get(i));
         }
 
-
-
         ArrayList<Integer> noDupes = noDuplicates(intList);
         System.out.println("ArrayList with duplicates: " + noDupes);
 
@@ -34,18 +32,47 @@ public class Exercises {
         String reversed = reverseString(s);
         System.out.println("reversed string is " + reversed);
 
+        System.out.println(wordsContainingEveryVowel());
+
     }
 
     public static ArrayList<Integer> noDuplicates(ArrayList<Integer> list) {
-        return null;
+        ArrayList<Integer> newArrayList = new ArrayList<Integer>();
+        for (int i = 0; i < list.size(); i++) {
+            if (!newArrayList.contains(list.get(i))) {
+                newArrayList.add(list.get(i));
+            }
+            //if (newArrayList.indexOf(list.get(i)) == -1) {
+            //    newArrayList.add(list.get(i));
+            //}
+        }
+        return newArrayList;
     }
 
     public static String reverseString(String str) {
-        return "";
+        String answer = "";
+        //for (int i = str.length() - 1; i >= 0; i--) {
+        //    answer += str.charAt(i);
+        //}
+        for (int i = 0; i < str.length(); i++) {
+            answer = str.charAt(i) + answer;
+        }
+        return answer;
     }
 
     public static ArrayList<String> wordsContainingEveryVowel() {
-        return null;
+        ArrayList<String> dictionary = readWords();
+        ArrayList<String> answerList = new ArrayList<String>();
+        for (int i = 0; i < dictionary.size(); i++) {
+            if (dictionary.get(i).contains("a") &&
+                    dictionary.get(i).contains("e") &&
+                    dictionary.get(i).contains("i") &&
+                    dictionary.get(i).contains("o") &&
+                    dictionary.get(i).contains("u")) {
+                answerList.add(dictionary.get(i));
+            }
+        }
+        return answerList;
     }
 
     public static ArrayList<String> wordsContainingEveryVowelExactlyOnce() {
