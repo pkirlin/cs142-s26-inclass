@@ -70,7 +70,13 @@ public class Recursion3 {
 
     // Helper function for above.
     private static int sumOfArrayList(ArrayList<Integer> list, int leftIdx) {
-        return 0;
+        if (leftIdx == list.size() - 1) {
+            return list.get(leftIdx);
+        }
+        else {
+            int smallerSum = sumOfArrayList(list, leftIdx + 1);
+            return list.get(0) + smallerSum;
+        }
     }
 
     // Calculate the largest element in an arraylist.

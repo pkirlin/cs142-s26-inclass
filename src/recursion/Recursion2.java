@@ -64,7 +64,18 @@ public class Recursion2 {
      * RECURSIVE CASE:
      */
     public static String reverseRec(String str) {
-        return ""; // remove this when you start coding
+        if (str.equals("")) {
+            return "";
+        }
+        else {
+            char firstLetter = str.charAt(0);
+
+            // make a new string that starts at index 1, goes to the end
+            String restOfString = str.substring(1);
+            String reversedRestOfString = reverseRec(restOfString);
+            reversedRestOfString += firstLetter;
+            return reversedRestOfString;
+        }
     }
 
     /**
