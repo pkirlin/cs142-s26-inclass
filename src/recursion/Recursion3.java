@@ -17,7 +17,7 @@ public class Recursion3 {
 
         // test max of arraylist:
         ArrayList<Integer> mylist2 = new ArrayList<>(List.of(5, 7, 2, 3));
-        System.out.println("Sum is " + maxOfArrayList(mylist2));
+        System.out.println("max is " + maxOfArrayList(mylist2));
 
     }
 
@@ -75,18 +75,32 @@ public class Recursion3 {
         }
         else {
             int smallerSum = sumOfArrayList(list, leftIdx + 1);
-            return list.get(0) + smallerSum;
+            return list.get(leftIdx) + smallerSum;
         }
     }
 
     // Calculate the largest element in an arraylist.
     public static int maxOfArrayList(ArrayList<Integer> list) {
-        return 0;
+        return maxOfArrayList(list, 0);
     }
 
     // Helper function for above.
     private static int maxOfArrayList(ArrayList<Integer> list, int leftIdx) {
-        return 0;
+        System.out.println(list + " " + leftIdx);
+        if (leftIdx == list.size() - 1) {
+            System.out.println("returning " + list.get(leftIdx));
+            return list.get(leftIdx);
+        }
+        else {
+            int maxSoFar = maxOfArrayList(list, leftIdx + 1);
+            if (list.get(leftIdx) > maxSoFar) {
+                System.out.println("returning " + list.get(leftIdx));
+                return list.get(leftIdx);
+            } else {
+                System.out.println("returning " + maxSoFar);
+                return maxSoFar;
+            }
+        }
     }
 
 }
