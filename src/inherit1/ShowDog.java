@@ -1,4 +1,6 @@
 package inherit1;
 
-public class ShowDog {
+public class ShowDog extends Dog {
+
+
 }

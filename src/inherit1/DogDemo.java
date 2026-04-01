@@ -12,5 +12,10 @@ public class DogDemo {
 
         System.out.println(fido);
         System.out.println(toto);
+
+        ShowDog showdog = new ShowDog();
+        showdog.setName("Lassie");
+        showdog.setAge(5);
+        System.out.println(showdog);
     }
 }
