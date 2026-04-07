@@ -17,5 +17,14 @@ public class DogDemo {
         showdog.setName("Lassie");
         showdog.setAge(5);
         System.out.println(showdog);
+
+        showdog.rollover();
+        showdog.rollover();
+        //toto.rollover();  won't work because toto is a "regular" dog
+
+        toto.speak();
+        //showdog.speak();
+        showdog.speak();
+
     }
 }

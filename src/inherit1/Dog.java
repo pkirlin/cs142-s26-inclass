@@ -2,7 +2,7 @@ package inherit1;
 
 public class Dog
 {
-    private String name;
+    protected String name;
     private int age;
 
     public void speak() {
