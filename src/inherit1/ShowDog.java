@@ -4,6 +4,10 @@ public class ShowDog extends Dog {
 
     private int numTrophies;
 
+    public ShowDog(String newName, int newAge) {
+        super(newName, newAge); // call the superclass constructor
+    }
+
     public void rollover() {
         System.out.println(name + " rolls over");
         numTrophies++;
