@@ -27,6 +27,6 @@ public class ShowDog extends Dog {
 
     public void speak() {
         super.speak();
-        System.out.println("   and " + getName() + " also says woof woof in French.");
+        System.out.println("   and " + getName() + " also says ouaf ouaf in French.");
     }
 }
