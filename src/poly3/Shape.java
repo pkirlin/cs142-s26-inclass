@@ -2,7 +2,7 @@ package poly3;
 
 import java.awt.*;
 
-public class Shape {
+public abstract class Shape {
     private Color color;
 
     public Color getColor() {
@@ -13,5 +13,6 @@ public class Shape {
         this.color = color;
     }
 
+    public abstract int getArea();
 
 }

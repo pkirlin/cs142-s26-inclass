@@ -1,6 +1,6 @@
 package poly2;
 
-public class Pet {
+public abstract class Pet {
 
     private String name;
     private int age;
@@ -10,6 +10,12 @@ public class Pet {
         name = newName;
         age = newAge;
     }
+
+    public abstract void speak();
+    // 1. all pets have the ability to speak, but
+    // this concept is so ABSTRACT that we can't specify how it
+    // works here (in Pet).
+    // 2. Each subclass of Pet MUST OVERRIDE this method.
 
     public String getName() {
         return name;
